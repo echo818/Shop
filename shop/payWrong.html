@@ -1,0 +1,45 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>${pageContext.request.contextPath}</title>
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta content="telephone=no" name="format-detection" />
+    <link rel="stylesheet" type="text/css" href="../${ctx}/resources/shop/css/style.css" />
+    <script type="text/javascript" src="../${ctx}/resources/common/js/jquery-1.11.2.min.js" ></script>
+    <script type="text/javascript" src="../${ctx}/resources/shop/js/script.js" ></script>
+    <style>
+        .main {-webkit-overflow-scrolling: touch;}
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="head-title">温馨提示</div>
+    </div>
+    <div class="main">
+        <div class="pay-success-tips pay-wrong-tips">
+			<h3>支付失败</h3>
+			<img src="../${ctx}/resources/shop/images/pay_no.png">
+			<p>非常抱歉，支付失败</p>
+			<p>请再次选择支付方式</p>
+		</div>
+		<div class="pay-ctrl pay-wrong-ctrl">
+			<div class="pay-select-ctrl">
+				<div class="pay-select-btn pay-select-active fl"></div>
+				<div class="pay-select-text">微信支付</div>
+			</div>
+			<div class="pay-select-ctrl">
+				<div class="pay-select-btn fl"></div>
+				<div class="pay-select-text">支付宝支付</div>
+			</div>
+		</div>
+		<div class="common-ctrl">
+			<a href="javascript:void(0);">继续支付</a>
+		</div>
+    </div>
+</body>
+</html>

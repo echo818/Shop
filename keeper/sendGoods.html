@@ -1,0 +1,63 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta content="telephone=no" name="format-detection" />
+    <link rel="stylesheet" type="text/css" href="../${ctx}/resources/keeper/css/style.css" />
+    <script type="text/javascript" src="../${ctx}/resources/common/js/jquery-1.11.2.min.js" ></script>
+    <script type="text/javascript" src="../${ctx}/resources/keeper/js/script.js" ></script>
+    <style>
+        .main {-webkit-overflow-scrolling: touch;}
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="head-title">订单发货</div>
+    </div>
+    <div class="main">
+        <div class="sendgoods">
+			<form action="javascript:void(0);" method="post">
+            <div class="sendgoods-class">
+				<div class="sendgoods-title fl">物流类型：</div>
+				<div class="sendgoods-choose fl">
+					<div class="sendgoods-courier fl">
+						<div class="sendgoods-radio fl">
+							<input type="radio" name="sendgoods" value="yes" checked>
+						</div>
+						<div class="sendgoods-text fl">快递</div>
+					</div>
+					<div class="sendgoods-none fl">
+						<div class="sendgoods-radio fl">
+							<input type="radio" name="sendgoods" value="no">
+						</div>
+						<div class="sendgoods-text fl">无需物流</div>
+					</div>
+				</div>
+				<div class="clear"></div>
+			</div>
+			<div class="sendgoods-company">
+				<div class="sendgoods-title fl">快递公司</div>
+				<div class="sendgoods-input fl">
+					<input type="text" name="company">
+				</div>
+			</div>
+			<div class="sendgoods-ordernum">
+				<div class="sendgoods-title fl">快递单号</div>
+				<div class="sendgoods-input fl">
+					<input type="text" name="ordernum">
+				</div>
+			</div>
+			<div class="sendgoods-ctrl">
+				<div class="sendgoods-ctrl-confirm fl"><input type="submit" value="发货"></div>
+				<div class="sendgoods-ctrl-back fr"><input type="reset" value="返回"></div>
+			</div>
+        </div>
+    </div>
+</body>
+</html>

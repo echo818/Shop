@@ -1,0 +1,131 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>${pageContext.request.contextPath}</title>
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta content="telephone=no" name="format-detection" />
+    <link rel="stylesheet" type="text/css" href="../${ctx}/resources/keeper/css/style.css" />
+	<link rel="stylesheet" type="text/css" href="../${ctx}/resources/common/css/swiper.min.css" />
+    <script type="text/javascript" src="../${ctx}/resources/common/js/jquery-1.11.2.min.js" ></script>
+    <script type="text/javascript" src="../${ctx}/resources/keeper/js/script.js" ></script>
+    <style>
+        .main {-webkit-overflow-scrolling: touch;}
+    </style>
+</head>
+<body>
+    <div class="main home-main">
+		<div class="home-header-pic">
+			<div class="swiper-container">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide"><img src="../${ctx}/resources/shop/images/product_01.jpg"></div>
+					<div class="swiper-slide"><img src="../${ctx}/resources/shop/images/product_01.jpg"></div>
+					<div class="swiper-slide"><img src="../${ctx}/resources/shop/images/product_01.jpg"></div>
+					<div class="swiper-slide"><img src="../${ctx}/resources/shop/images/product_01.jpg"></div>
+				</div>
+				<div class="swiper-pagination"></div>
+			</div>
+		</div>
+		<div class="home-nav">
+			<div class="home-nav-left fl">
+				<a href="javascript:void(0);">
+					<div class="home-nav-img fl">
+						<img src="../${ctx}/resources/keeper/images/home-icon1.png">
+					</div>
+					<div class="home-nav-text fl">
+						<h3>本周提成:</h3>
+						<p>￥5000.00</p>
+					</div>
+				</a>
+			</div>
+			<div class="home-nav-right fl">
+				<div class="home-nav-top">
+					<a href="javascript:void(0);">
+						<div class="home-nav-img fl">
+							<img src="../${ctx}/resources/keeper/images/home-icon2.png">
+						</div>
+						<div class="home-nav-text fl">
+							<h3>上周提成:</h3>
+							<p>￥2100.00</p>
+						</div>
+						</div>
+					</a>
+				<div class="home-nav-bottom">
+					<a href="javascript:void(0);">
+						<div class="home-nav-img fl">
+							<img src="../${ctx}/resources/keeper/images/home-icon3.png">
+						</div>
+						<div class="home-nav-text fl">
+							<h3>总提成:</h3>
+							<p>￥4100.00</p>
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+		<div class="home-list">
+			<ul>
+				<li>
+					<a href="javascript:void(0);">
+						<div class="home-list-text fl">我的店铺</div>
+						<div class="home-list-icon fr">
+							<img src="../${ctx}/resources/keeper/images/home-icon-go.png">
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="javascript:void(0);">
+						<div class="home-list-text fl">新手教程</div>
+						<div class="home-list-icon fr">
+							<img src="../${ctx}/resources/keeper/images/home-icon-go.png">
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="javascript:void(0);">
+						<div class="home-list-text fl">安煋模式</div>
+						<div class="home-list-icon fr">
+							<img src="../${ctx}/resources/keeper/images/home-icon-go.png">
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="javascript:void(0);">
+						<div class="home-list-text fl">产品介绍</div>
+						<div class="home-list-icon fr">
+							<img src="../${ctx}/resources/keeper/images/home-icon-go.png">
+						</div>
+					</a>
+				</li>
+			</ul>
+		</div>
+    </div>
+	<div class="footer">
+		<ul>
+			<li class="foot-active"><a href="javascript:void(0);">提成</a></li>
+			<li><a href="javascript:void(0);">客户</a></li>
+			<li><a href="javascript:void(0);">订单</a></li>
+			<li><a href="javascript:void(0);">我的</a></li>
+		</ul>
+	</div>
+	<script src="../${ctx}/resources/common/js/swiper.min.js"></script>
+	<script>
+		var swiper = new Swiper('.swiper-container',{
+			pagination : '.swiper-pagination',
+			loop : true,
+		});
+		$(document).ready(function(){
+			var docH = $(this).height();
+			var mainH = $('.main').height();
+			var height = docH-56;
+			if(mainH>height){
+				$('.main').css('margin-bottom','56px');
+			}
+		})
+	</script>
+</body>
+</html>

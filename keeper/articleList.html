@@ -1,0 +1,110 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>${pageContext.request.contextPath}</title>
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta content="telephone=no" name="format-detection" />
+    <link rel="stylesheet" type="text/css" href="../${ctx}/resources/keeper/css/style.css" />
+    <script type="text/javascript" src="../${ctx}/resources/common/js/jquery-1.11.2.min.js" ></script>
+    <script type="text/javascript" src="../${ctx}/resources/keeper/js/script.js" ></script>
+    <style>
+        .main {-webkit-overflow-scrolling: touch;}
+    </style>
+</head>
+<body>
+    <div class="header">
+		<div class="head-back">
+			<img src="../${ctx}/resources/keeper/images/home-back.png">
+		</div>
+        <div class="head-title">产品活动</div>
+		<div class="head-share">分享</div>
+    </div>
+    <div class="main">
+		<div class="article-header-pic">
+			<img src="../${ctx}/resources/keeper/images/article-banner.png">
+		</div>
+		<div class="article-list">
+			<ul>
+				<li>
+					<a href="javascript:void(0);">
+						<div class="article-list-text fl">
+							<h3>双十二也快来了，你心动没双十二也快来了，你心动没</h3>
+							<p>2015.10.12</p>
+						</div>
+						<div class="article-list-pic fr">
+							<img src="../${ctx}/resources/keeper/images/article-img.png">
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="javascript:void(0);">
+						<div class="article-list-text fl">
+							<h3>双十二也快来了，你心动没</h3>
+							<p>2015.10.12</p>
+						</div>
+						<div class="article-list-pic fr">
+							<img src="../${ctx}/resources/keeper/images/article-img.png">
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="javascript:void(0);">
+						<div class="article-list-text fl">
+							<h3>双十二也快来了，你心动没</h3>
+							<p>2015.10.12</p>
+						</div>
+						<div class="article-list-pic fr">
+							<img src="../${ctx}/resources/keeper/images/article-img.png">
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="javascript:void(0);">
+						<div class="article-list-text fl">
+							<h3>双十二也快来了，你心动没双十二也快来了，你心动没</h3>
+							<p>2015.10.12</p>
+						</div>
+						<div class="article-list-pic fr">
+							<img src="../${ctx}/resources/keeper/images/article-img.png">
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="javascript:void(0);">
+						<div class="article-list-text fl">
+							<h3>双十二也快来了，你心动没</h3>
+							<p>2015.10.12</p>
+						</div>
+						<div class="article-list-pic fr">
+							<img src="../${ctx}/resources/keeper/images/article-img.png">
+						</div>
+					</a>
+				</li>
+			</ul>
+		</div>
+    </div>
+	<div class="article-footer">
+		<ul>
+			<li><a href="javascript:void(0);">产品活动</a></li>
+			<li><a href="javascript:void(0);">新手指南</a></li>
+			<li><a href="javascript:void(0);">销售技巧</a></li>
+			<li><a href="javascript:void(0);">安煋模式</a></li>
+		</ul>
+	</div>
+	<script>
+		$(document).ready(function(){
+			var docH = $(this).height();
+			var mainH = $('.main').height();
+			var height = docH-108;
+			if(mainH>height){
+				$('.main').css('margin-bottom','56px');
+			}
+		})
+	</script>
+</body>
+</html>
